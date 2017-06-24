@@ -1,11 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class App extends Component {
-  render() {
-    return (
-      <span style={{ display: 'none' }} />
-    )
-  }
-}
+const App = () =>
+  <span style={{ display: 'none' }} />
 
 export default App
