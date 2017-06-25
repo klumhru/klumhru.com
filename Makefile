@@ -1,5 +1,5 @@
 provision:
-	npm install
+	npm install -q
 test:
 	CI=1 npm test --ci
 build-prod:
