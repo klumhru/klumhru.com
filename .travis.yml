@@ -1,5 +1,7 @@
-dist: trusty
 language: node_js
 node_js:
 - '8'
-sudo: false
+services:
+  - docker
+test: make provision test
+build: make provision build-prod

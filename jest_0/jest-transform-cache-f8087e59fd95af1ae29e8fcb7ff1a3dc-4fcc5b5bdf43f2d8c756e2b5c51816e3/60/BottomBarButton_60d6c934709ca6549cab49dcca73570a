@@ -1,0 +1,40 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/src/src/components/page/BottomBarButton.js';var _react = require('react');var _react2 = _interopRequireDefault(_react);
+var _propTypes = require('prop-types');var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _BottomNavigation = require('material-ui/BottomNavigation');
+var _styles = require('material-ui/styles');
+
+var _MdIcon = require('./MdIcon');var _MdIcon2 = _interopRequireDefault(_MdIcon);
+
+var _styles2 = require('./styles');function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+const BottomBarButton = props => {
+  const { label, icon, classes, url } = props;
+  const handleOnClick = () => {
+    if (url) {
+      window.open(url, '_blank');
+    }
+  };
+  return (
+    _react2.default.createElement(_BottomNavigation.BottomNavigationButton, {
+      classes: { label: classes.barLabel },
+      label: label,
+      showLabel: true,
+      icon: _react2.default.createElement(_MdIcon2.default, { className: classes.barIcon, name: icon, __source: { fileName: _jsxFileName, lineNumber: 23 }, __self: undefined }),
+      onClick: evt => handleOnClick(evt), __source: { fileName: _jsxFileName, lineNumber: 19 }, __self: undefined }));
+
+
+};
+
+BottomBarButton.propTypes = {
+  label: _propTypes2.default.string.isRequired,
+  icon: _propTypes2.default.string.isRequired,
+  classes: _propTypes2.default.object.isRequired,
+  url: _propTypes2.default.string };
+
+
+BottomBarButton.defaultProps = {
+  url: undefined };exports.default =
+
+
+(0, _styles.withStyles)(_styles2.bottomBar)(BottomBarButton);

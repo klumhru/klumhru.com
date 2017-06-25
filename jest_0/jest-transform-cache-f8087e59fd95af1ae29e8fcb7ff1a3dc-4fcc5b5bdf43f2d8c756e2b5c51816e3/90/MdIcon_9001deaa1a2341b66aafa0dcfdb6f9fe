@@ -1,0 +1,25 @@
+'use strict';Object.defineProperty(exports, "__esModule", { value: true });var _jsxFileName = '/src/src/components/page/MdIcon.js';var _react = require('react');var _react2 = _interopRequireDefault(_react);
+var _propTypes = require('prop-types');var _propTypes2 = _interopRequireDefault(_propTypes);
+var _classnames = require('classnames');var _classnames2 = _interopRequireDefault(_classnames);
+var _styles = require('material-ui/styles');
+
+var _styles2 = require('./styles');function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+const MdIcon = props => {
+  const { name, classes } = props;
+  const className = (0, _classnames2.default)(
+  'mdi',
+  `mdi-${name}`,
+  classes.barIcon);
+
+  return (
+    _react2.default.createElement('i', Object.assign({ className }, { __source: { fileName: _jsxFileName, lineNumber: 16 }, __self: undefined })));
+
+};
+
+MdIcon.propTypes = {
+  name: _propTypes2.default.string.isRequired,
+  classes: _propTypes2.default.object.isRequired };exports.default =
+
+
+(0, _styles.withStyles)(_styles2.bottomBar)(MdIcon);

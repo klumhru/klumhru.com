@@ -1,0 +1,13 @@
+'use strict';var _jsxFileName = '/src/src/components/page/BottomBarLinks.test.js';var _react = require('react');var _react2 = _interopRequireDefault(_react);
+var _reactDom = require('react-dom');var _reactDom2 = _interopRequireDefault(_reactDom);
+var _styles = require('material-ui/styles');
+var _BottomBarLinks = require('./BottomBarLinks');var _BottomBarLinks2 = _interopRequireDefault(_BottomBarLinks);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  _reactDom2.default.render(
+  _react2.default.createElement(_styles.MuiThemeProvider, { __source: { fileName: _jsxFileName, lineNumber: 9 }, __self: undefined },
+    _react2.default.createElement(_BottomBarLinks2.default, { __source: { fileName: _jsxFileName, lineNumber: 10 }, __self: undefined })),
+
+  div);
+});
