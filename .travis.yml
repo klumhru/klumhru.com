@@ -2,8 +2,7 @@ language: node_js
 node_js:
 - '7'
 script:
-  - npm build
-  - ls -la
+  - npm run build
 deploy:
   skip_cleanup: true
   provider: s3
