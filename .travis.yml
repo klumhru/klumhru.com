@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - '7'
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJR5PAPF2UTRRFIXA
   secret_access_key:
