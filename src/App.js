@@ -1,6 +1,12 @@
 import React from 'react'
 
-const App = () =>
-  <span style={{ display: 'none' }} />
+import { BottomBar, Header } from './components/page'
+
+const App = () => (
+  <div>
+    <Header />
+    <BottomBar />
+  </div>
+)
 
 export default App
