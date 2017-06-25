@@ -1,7 +1,7 @@
-language: node_js
-node_js:
-- '8'
+sudo: required
 services:
   - docker
-test: make provision test
-build: make provision build-prod
+
+before_install:
+  - docker pull node
+  - docker run -i -v $PWD:/src -w /src node make all
