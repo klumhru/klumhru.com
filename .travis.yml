@@ -9,7 +9,7 @@ deploy:
   access_key_id: AKIAJR5PAPF2UTRRFIXA
   secret_access_key:
     secure: A5bemV6yC9Cbn/pnAjP0e2xgx4fpV2Z372N1Ci7v10q2QL1+yARyCQPgeLcmY+thXvDBRLHwJ1IyUsA34LXY++WemJa3wu+cKoEOYde4ktoKi7pKLpfzWSB2/tf0h4kBJOoOL3zQnFQwO5rRsgxDpl+dSMIa3tgjlo62Qpkw2vi4PC69UCgwvdBB68Apouz2zunogXIJTMSH5VPiyb5ivOKFBanemtqRcFADbtiKKAOMZTSzVLqB4MqZpA1GjKmEatZxNxctbdF3hItxRFDWXhaM9nOhw6kCE3l4ZcQoKHvcK/4rcLiu0cbJv3IdnQvPCaHAx/GYJvtd0juLmcGK56ZXHU2gphkxN7Zcslpgiy0Jzda8ByYJxzN4uRIhxv/jbV4PrMZKHuFutc9UbIdR+NzqAG9FcDuLhQAEGl1fgRsHERreqpPYOUmNOU8rWCSLr1c1Lle58HsEB7gjAkW3Mi345/q6D2OCpeH2eDpOpqKFb2wunTOK/r9Fnyi9W3yZknQyN4ULE1AF2T4HsUpiL7UBtQyr1uOClKasN7bSM3gVJNfeOp9CWjDFX13MBokUxkb9TEKcKlKQFJ3QwnQvSTz2bqOEW7NdKVEeVlvvm3Cg7fn6nLkGLyE4n8shSJihcyC09OK0FpbbhVeCdIKL/WvsTWjBj83/CzQFySlkT/Q=
-  bucket: klumhru.com
+  bucket: arn:aws:s3:::klumhru.com/
   local-dir: build
   acl: 'public_read'
   on:
