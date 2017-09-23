@@ -19,7 +19,7 @@ const BottomBarChips = (props) => {
   const { classes } = props
   return (
     <Grid
-      gutter={0}
+      spacing={0}
       title="What I am"
       className={classes.chips}
       container

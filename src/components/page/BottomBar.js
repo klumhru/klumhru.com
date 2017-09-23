@@ -25,7 +25,7 @@ class BottomBarComponent extends React.Component {
       <div className={classes.root}>
         <Grid
           container
-          gutter={0}
+          spacing={0}
           title="Find me"
           className={classes.bar}
           justify="space-around"

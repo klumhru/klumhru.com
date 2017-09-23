@@ -9,7 +9,7 @@ import { BottomBar } from './styles'
 const BottomBarLinks = (props) => {
   const { classes } = props
   return (
-    <Grid container className={classes.links} gutter={0}>
+    <Grid container className={classes.links} spacing={0}>
       <BottomBarButton
         icon="github-box"
         label="Github"
