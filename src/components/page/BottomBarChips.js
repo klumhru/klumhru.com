@@ -5,7 +5,7 @@ import Chip from 'material-ui/Chip'
 import Grid from 'material-ui/Grid'
 import { withStyles } from 'material-ui/styles'
 
-import { bottomBar } from './styles'
+import { BottomBar } from './styles'
 
 const chipValues = [
   { key: 0, label: 'Coder' },
@@ -39,4 +39,4 @@ BottomBarChips.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(bottomBar)(BottomBarChips)
+export default withStyles(BottomBar)(BottomBarChips)

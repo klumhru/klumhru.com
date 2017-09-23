@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import Typography from 'material-ui/Typography'
 
-import { header } from './styles'
+import { Header } from './styles'
 
-const Header = (props) => {
+const HeaderComponent = (props) => {
   const { classes } = props
   return (
     <Typography
@@ -16,8 +16,8 @@ const Header = (props) => {
   )
 }
 
-Header.propTypes = {
+HeaderComponent.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(header)(Header)
+export default withStyles(Header)(HeaderComponent)

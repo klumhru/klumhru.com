@@ -4,12 +4,12 @@ import PropTypes from 'prop-types'
 import { withStyles } from 'material-ui/styles'
 import Grid from 'material-ui/Grid'
 
-import { bottomBar } from './styles'
+import { BottomBar } from './styles'
 
 import BottomBarLinks from './BottomBarLinks'
 import BottomBarChips from './BottomBarChips'
 
-class BottomBar extends React.Component {
+class BottomBarComponent extends React.Component {
   static propTypes = {
     classes: PropTypes.object.isRequired,
   }
@@ -43,4 +43,4 @@ class BottomBar extends React.Component {
   }
 }
 
-export default withStyles(bottomBar)(BottomBar)
+export default withStyles(BottomBar)(BottomBarComponent)

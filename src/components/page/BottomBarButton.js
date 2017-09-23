@@ -6,7 +6,7 @@ import { withStyles } from 'material-ui/styles'
 
 import MdIcon from './MdIcon'
 
-import { bottomBar } from './styles'
+import { BottomBar } from './styles'
 
 const BottomBarButton = (props) => {
   const { label, icon, classes, url } = props
@@ -37,4 +37,4 @@ BottomBarButton.defaultProps = {
   url: undefined,
 }
 
-export default withStyles(bottomBar)(BottomBarButton)
+export default withStyles(BottomBar)(BottomBarButton)

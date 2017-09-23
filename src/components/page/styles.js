@@ -1,6 +1,13 @@
-import { grey, createStyleSheet } from 'material-ui/styles'
+import { createMuiTheme } from 'material-ui/styles'
+import { grey } from 'material-ui/colors'
 
-export const header = createStyleSheet('Header', (theme) => ({
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark', // Switching the dark mode on is a single property value change.
+  },
+})
+
+const Header = {
   root: {
     color: theme.palette.text.primary,
     paddingTop: theme.spacing.unit * 3,
@@ -8,9 +15,9 @@ export const header = createStyleSheet('Header', (theme) => ({
     paddingRight: theme.spacing.unit * 2,
     marginTop: 0,
   },
-}))
+}
 
-export const bottomBar = createStyleSheet('BottomBar', (theme) => ({
+const BottomBar = {
   root: {
     position: 'absolute',
     bottom: 0,
@@ -53,4 +60,10 @@ export const bottomBar = createStyleSheet('BottomBar', (theme) => ({
     // fontSize: 3 * theme.spacing.unit,
     height: 3 * theme.spacing.unit,
   },
-}))
+}
+
+export {
+  Header,
+  BottomBar,
+  theme,
+}

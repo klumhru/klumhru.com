@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { withStyles } from 'material-ui/styles'
 
-import { bottomBar } from './styles'
+import { BottomBar } from './styles'
 
 const MdIcon = (props) => {
   const { name, classes } = props
@@ -22,4 +22,4 @@ MdIcon.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(bottomBar)(MdIcon)
+export default withStyles(BottomBar)(MdIcon)

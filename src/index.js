@@ -4,20 +4,15 @@ import { Provider } from 'react-redux'
 import 'typeface-roboto/index.css'
 import 'mdi/css/materialdesignicons.css'
 
-import { MuiThemeProvider, createMuiTheme, createPalette } from 'material-ui/styles'
+import { MuiThemeProvider } from 'material-ui/styles'
 import injectTapEventPlugin from 'react-tap-event-plugin'
+import { theme } from './components/page/styles'
 
 import configureStore from './lib/state/store'
 
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
-
-const theme = createMuiTheme({
-  palette: createPalette({
-    type: 'dark', // Switching the dark mode on is a single property value change.
-  }),
-})
 
 injectTapEventPlugin()
 const store = configureStore()

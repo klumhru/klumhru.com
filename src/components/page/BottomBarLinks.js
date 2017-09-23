@@ -4,7 +4,7 @@ import Grid from 'material-ui/Grid'
 import { withStyles } from 'material-ui/styles'
 
 import BottomBarButton from './BottomBarButton'
-import { bottomBar } from './styles'
+import { BottomBar } from './styles'
 
 const BottomBarLinks = (props) => {
   const { classes } = props
@@ -43,4 +43,4 @@ BottomBarLinks.propTypes = {
   classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(bottomBar)(BottomBarLinks)
+export default withStyles(BottomBar)(BottomBarLinks)
