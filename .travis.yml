@@ -14,4 +14,4 @@ deploy:
   local-dir: build
   acl: 'public_read'
   on:
-    repo: Klumhru/klumhru.com
+    repo: klumhru/klumhru.com
