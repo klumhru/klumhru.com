@@ -4,9 +4,8 @@ import { Provider } from 'react-redux'
 import 'typeface-roboto/index.css'
 import 'mdi/css/materialdesignicons.css'
 
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
+import { MuiThemeProvider, createMuiTheme, createPalette } from 'material-ui/styles'
 import injectTapEventPlugin from 'react-tap-event-plugin'
-import createPalette from 'material-ui/styles/palette'
 
 import configureStore from './lib/state/store'
 

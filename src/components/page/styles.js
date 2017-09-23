@@ -1,5 +1,4 @@
-import { createStyleSheet } from 'material-ui/styles'
-import { grey } from 'material-ui/styles/colors'
+import { grey, createStyleSheet } from 'material-ui/styles'
 
 export const header = createStyleSheet('Header', (theme) => ({
   root: {
