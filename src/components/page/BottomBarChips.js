@@ -12,7 +12,7 @@ const chipValues = [
   { key: 1, label: 'Clouder' },
   { key: 2, label: 'Husband' },
   { key: 3, label: 'Parront' },
-  { key: 4, label: 'CCPer' },
+  { key: 4, label: 'Gamer' },
 ]
 
 const BottomBarChips = (props) => {
